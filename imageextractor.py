@@ -1,4 +1,4 @@
-import google.generativeai as genai
+import google.genai as genai
 import cv2
 import numpy as np
 from PIL import Image
@@ -21,14 +21,16 @@ def extract_text_image(image_path):
 
     # Configure genai Model
     key = os.getenv("GOOGLE_API_KEY")
-    genai.configure(api_key=key)
-    model = genai.GenerativeModel('gemini-2.5-flash-lite')
+    client = genai.Client(api_key=key)
 
     # Lets write prompt for OCR
     prompt = '''You act as an OCR application on the given image and extract the text from it.
             Give only the text as output, do not give any other explanation or description.'''
     
     # Lets extrcat and return the text
-    response = model.generate_content([prompt,final_image])
+    response = client.models.generate_content(
+        model='gemini-2.5-flash-lite',
+        contents=[prompt, final_image]
+    )
     output_text = response.text
     return output_text
