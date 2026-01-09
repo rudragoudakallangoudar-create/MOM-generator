@@ -120,7 +120,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**App Link**: [MOM Generator Web App](https://mom-generator-nk3794irsu79hdbzxhg7qf.streamlit.app/)
+## 🚀 Deployment
+
+### Streamlit Cloud Deployment
+1. Go to [share.streamlit.io](https://share.streamlit.io)
+2. Connect your GitHub account
+3. Select this repository: `rudragoudakallangoudar-create/MOM-generator`
+4. Set main file path: `webapp.py`
+5. Add secret: `GOOGLE_API_KEY = "your_api_key_here"`
+6. Deploy!
+
+**Live App**: [Deploy your own instance](#deployment)
 
 
 
