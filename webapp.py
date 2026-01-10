@@ -5,6 +5,7 @@ from pdfextractor import text_extractor_pdf
 from docxextractor import text_extractor_docx
 from imageextractor import extract_text_image
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 import cv2
 import numpy as np
 from PIL import Image
