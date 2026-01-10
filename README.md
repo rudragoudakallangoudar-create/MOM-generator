@@ -95,20 +95,29 @@ Creates standardized minutes of meeting with:
 - Deadlines and next meetings
 - Summary
 
-### OCR Comparison
-Compare extraction quality between:
-- Tesseract OCR (open-source)
-- Google AI Vision (cloud-based)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Google AI for providing the Gemini API
+- Tesseract OCR for open-source OCR capabilities
+- Streamlit for the web application framework
+
+---
+
+## 🚀 Deployment
+
+### Streamlit Cloud Deployment
+1. Go to [share.streamlit.io](https://share.streamlit.io)
+2. Connect your GitHub account
+3. Select your repository
+4. Set main file path: `webapp.py`
+5. Add secret: `GOOGLE_API_KEY = "your_api_key_here"`
+6. Deploy!
+
+**Live App**: [Deploy your own instance](#deployment)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
